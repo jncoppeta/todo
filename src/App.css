@@ -1,0 +1,157 @@
+body {
+    background: linear-gradient(to right, #d3d1d1, #c5c7c5);
+  }
+
+.button {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    width: 30%;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2vh;
+    position: relative;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: relative;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.75s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div {
+    border-radius: 5px;
+    padding: 4vh;
+}
+
+.buttonContainer {
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes shaker {
+    0% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    6.25% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    12.5% {
+        -webkit-transform: translate(-2px, 0);
+    }
+
+    18.75% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    25% {
+        -webkit-transform: translate(-2px, 0);
+    }
+
+    31.25% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    37.5% {
+        -webkit-transform: translate(-2px, 0);
+    }
+
+    43.75% {
+        -webkit-transform: translate(-2px, 0);
+    }
+
+    50% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    56.25% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    62.5% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    68.75% {
+        -webkit-transform: translate(-2px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    81.25% {
+        -webkit-transform: translate(-2px, 0);
+    }
+
+    87.5% {
+        -webkit-transform: translate(2px, 0);
+    }
+
+    93.75% {
+        -webkit-transform: translate(-2px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate(2px, 0);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shaker;
+    -webkit-animation-duration: 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-timing-function: linear;
+    background-color: #c0392b;
+}
+
+.shake .default {
+    display: block;
+}
